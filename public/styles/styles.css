@@ -1,0 +1,113 @@
+/* ============================================================================ 
+   BASE Y VARIABLES GLOBALES
+   ============================================================================ */
+
+/* Reset básico para todos los elementos: eliminar margin/padding y usar border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS globales para colores, sombras, espaciado y border-radius */
+:root {
+    /* Colores corporativos */
+    --color-red: #DC2626;
+    --color-red-hover: #B91C1C;
+    --color-gray-dark: #374151;
+    --color-gray: #6B7280;
+    --color-gray-light: #E5E7EB;
+    --color-gray-bg: #F9FAFB;
+    --color-white: #FFFFFF;
+    --color-success: #10B981;
+    --color-error: #EF4444;
+    --color-warning: #F59E0B;
+    
+    /* Sombras pequeñas, medianas y grandes */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    
+    /* Espaciados generales */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    
+    /* Bordes redondeados */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+}
+
+/* ============================================================================ 
+   ESTILOS BASE
+   ============================================================================ */
+
+/* Fuente global, tamaño base y fondo con degradado ligero */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-gray-dark);
+    background: linear-gradient(135deg, var(--color-gray-bg) 0%, #F3F4F6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================================================ 
+   LAYOUT
+   ============================================================================ */
+
+/* Contenedor central de la página */
+.container {
+    flex: 1; /* crece para ocupar el espacio disponible */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    width: 100%;
+}
+
+/* Cada página individual, inicialmente oculta */
+.page { display: none; }
+.page.active { display: block; }
+
+/* Encabezado de página centrado */
+.page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-gray-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-header p {
+    font-size: 1rem;
+    color: var(--color-gray);
+}
+
+/* ============================================================================ 
+   UTILIDADES
+   ============================================================================ */
+
+/* Clases de utilidad para alineación de texto */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Margen inferior por niveles */
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--spacing-md); }
+.mb-2 { margin-bottom: var(--spacing-lg); }
+
+/* Margen superior por niveles */
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--spacing-md); }
+.mt-2 { margin-top: var(--spacing-lg); }

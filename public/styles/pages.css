@@ -1,0 +1,265 @@
+/* ============================================================================ 
+   PÁGINA MONITOR - UPLOAD AREA
+   ============================================================================ */
+/* Área para arrastrar o hacer click para subir archivos */
+.upload-area {
+    border: 3px dashed var(--color-gray-light);
+    border-radius: var(--radius-xl);
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #FFF7ED; /* color de fondo suave */
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Hover cuando no está deshabilitada */
+.upload-area:hover:not(.disabled) {
+    background: #FFEDD5;
+    border-color: var(--color-red);
+}
+
+/* Estado deshabilitado */
+.upload-area.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: var(--color-gray-bg);
+}
+
+/* Estado cuando se arrastra un archivo sobre el área */
+.upload-area.drag-over {
+    background: #FEE2E2;
+    border-color: var(--color-red);
+    border-width: 4px;
+}
+
+/* Icono dentro del área de upload */
+.upload-icon {
+    width: 4rem;
+    height: 4rem;
+    color: var(--color-gray);
+    margin: 0 auto var(--spacing-md);
+    display: block;
+}
+
+/* Texto principal del área de upload */
+.upload-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-gray-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Texto secundario/hints */
+.upload-hint {
+    font-size: 0.875rem;
+    color: var(--color-gray);
+    font-weight: 500;
+}
+
+/* ============================================================================ 
+   PÁGINA MONITOR - SCAN RESULTS
+   ============================================================================ */
+/* Contenedor principal de resultados */
+.scan-results { margin-top: var(--spacing-lg); }
+
+/* Carpeta escaneada individual */
+.scan-folders {
+    background: var(--color-gray-bg);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Título de cada carpeta escaneada */
+.scan-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-gray-dark);
+    margin-bottom: 0.75rem;
+}
+
+/* Cada item de carpeta dentro de los resultados */
+.folder-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--radius-md);
+    padding: 0.75rem var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    transition: box-shadow 0.2s;
+}
+
+.folder-item:hover { box-shadow: var(--shadow-sm); }
+.folder-item:last-child { margin-bottom: 0; }
+
+/* Nombre de la carpeta y contador de archivos */
+.folder-name { font-size: 0.875rem; font-weight: 500; color: var(--color-gray-dark); }
+.folder-count {
+    font-size: 0.875rem;
+    color: var(--color-gray);
+    background: var(--color-gray-bg);
+    padding: var(--spacing-xs) 0.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}
+
+/* ============================================================================ 
+   PÁGINA HISTORIAL - FILTERS
+   ============================================================================ */
+/* Contenedor de filtros encima de la tabla */
+.filters {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-end;
+    margin-bottom: var(--spacing-lg);
+}
+
+.filters .form-group { flex: 1; margin-bottom: 0; }
+.filters .btn { padding: 0.75rem var(--spacing-xl); }
+
+/* ============================================================================ 
+   PÁGINA HISTORIAL - TABLE
+   ============================================================================ */
+/* Contenedor con scroll horizontal si la tabla es muy ancha */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-gray-light);
+}
+
+/* Tabla de historial */
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-white);
+}
+
+.history-table thead { background: var(--color-gray-bg); }
+
+.history-table th {
+    padding: 0.75rem var(--spacing-md);
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-gray-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--color-gray-light);
+}
+
+.history-table td {
+    padding: 0.75rem var(--spacing-md);
+    font-size: 0.875rem;
+    color: var(--color-gray-dark);
+    border-bottom: 1px solid var(--color-gray-light);
+}
+
+.history-table tbody tr:hover { background: var(--color-gray-bg); }
+.history-table tbody tr:last-child td { border-bottom: none; }
+
+/* Indicadores de estado */
+.status-success { color: var(--color-success); font-weight: 600; font-size: 1.1rem; }
+.status-error   { color: var(--color-error); font-weight: 600; font-size: 1.1rem; }
+
+/* Detalle de error en fila expandida */
+.error-detail td {
+    font-size: 0.75rem;
+    color: var(--color-gray);
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+    font-style: italic;
+}
+
+/* ============================================================================ 
+   PÁGINA HISTORIAL - PAGINATION
+   ============================================================================ */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Botones de página */
+.page-btn {
+    padding: var(--spacing-sm) 0.75rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--color-gray-dark);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+    min-width: 2.5rem;
+}
+
+.page-btn:hover { background: var(--color-gray-bg); border-color: var(--color-gray); }
+.page-btn.active { background: var(--color-red); color: var(--color-white); border-color: var(--color-red); }
+
+.page-ellipsis { padding: var(--spacing-sm); color: var(--color-gray); font-weight: 500; }
+
+/* ============================================================================ 
+   PÁGINA HISTORIAL - STATS
+   ============================================================================ */
+.stats {
+    padding: var(--spacing-md);
+    background: var(--color-gray-bg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-gray-dark);
+    border: 1px solid var(--color-gray-light);
+}
+
+.stats strong { font-weight: 600; color: var(--color-gray-dark); }
+
+/* ============================================================================ 
+   RESPONSIVE
+   ============================================================================ */
+/* Ajustes para tablet y móvil */
+@media (max-width: 768px) {
+    .navbar-content { flex-direction: column; gap: var(--spacing-md); }
+    .navbar-tabs { width: 100%; justify-content: center; }
+    .nav-tab { flex: 1; text-align: center; }
+    .container { padding: var(--spacing-md); }
+    .page-header h1 { font-size: 1.75rem; }
+    .card { padding: var(--spacing-md); }
+    .button-group { flex-direction: column; }
+    .button-group .btn { width: 100%; }
+    .filters { flex-direction: column; align-items: stretch; }
+    .filters .btn { width: 100%; }
+    .table-container { font-size: 0.75rem; }
+    .history-table th, .history-table td { padding: var(--spacing-sm); }
+    .upload-area { padding: var(--spacing-xl) var(--spacing-md); }
+    .upload-icon { width: 3rem; height: 3rem; }
+    .upload-text { font-size: 1rem; }
+    .toast { top: 1rem; right: 1rem; left: 1rem; max-width: none; }
+}
+
+@media (max-width: 480px) {
+    .logo { font-size: 1.25rem; }
+    .navbar-title { font-size: 0.65rem; }
+    .page-header h1 { font-size: 1.5rem; }
+    .section-title { font-size: 0.75rem; }
+    .btn { font-size: 0.875rem; padding: 0.75rem var(--spacing-md); }
+    .file-name { font-size: 0.75rem; }
+    .folder-name, .folder-count { font-size: 0.75rem; }
+}
+
+/* ============================================================================ 
+   PRINT STYLES
+   ============================================================================ */
+/* Oculta elementos innecesarios al imprimir y ajusta tabla */
+@media print {
+    .navbar, .footer, .button-group, .filters, .pagination, .server-status, .overlay, .toast { display: none !important; }
+    body { background: white; }
+    .card { box-shadow: none; border: 1px solid #000; }
+    .page { display: block !important; }
+    .history-table { border: 1px solid #000; }
+    .history-table th, .history-table td { border: 1px solid #000; }
+}

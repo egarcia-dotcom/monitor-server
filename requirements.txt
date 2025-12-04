@@ -1,0 +1,20 @@
+# ================================================================================
+# DEPENDENCIAS PYTHON - Monitor Server
+# ================================================================================
+# Instalación: pip3 install -r requirements.txt --break-system-packages
+# ================================================================================
+
+# Procesamiento de PDFs
+PyMuPDF==1.23.8
+
+# Procesamiento de imágenes
+opencv-python==4.8.1.78
+numpy==1.24.3
+pillow==10.1.0
+
+# Detección de códigos de barras
+pyzbar==0.1.9
+
+# Generación de Excel
+pandas==2.1.3
+openpyxl==3.1.2

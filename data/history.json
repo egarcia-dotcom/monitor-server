@@ -1,0 +1,275 @@
+{
+  "entries": [
+    {
+      "id": "5c7dd5db-41bf-4adf-a628-f3c72f0adc19",
+      "filename": "MAIA 24.11 TXT.TXT",
+      "cliente": "airliquide_portugal",
+      "status": "error",
+      "timestamp": "2025-11-25T08:24:22.161Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "El argumento 'C:\\Users\\egarcia\\BENCINA SERVICIOS GENERALES S\\Datos - DATOS\\SISTEMAS\\PRIVADO\\Esteban\\monitor-server\\public\\scripts\\airliquide\\airliquide_portugal.ps1' para el par�metro -File no existe. Proporcione la ruta de acceso a un archivo '.ps1' existente como argumento para el par�metro -File.\r\n",
+      "processedBy": "manual"
+    },
+    {
+      "id": "2411b046-6a79-42f3-bbf1-b0ae252f6bbc",
+      "filename": "MAIA 24.11 TXT.TXT",
+      "cliente": "airliquide_portugal",
+      "status": "error",
+      "timestamp": "2025-11-25T08:26:52.955Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "El argumento 'C:\\Users\\egarcia\\BENCINA SERVICIOS GENERALES S\\Datos - DATOS\\SISTEMAS\\PRIVADO\\Esteban\\monitor-server\\public\\scripts\\airliquide\\airliquide_portugal.ps1' para el par�metro -File no existe. Proporcione la ruta de acceso a un archivo '.ps1' existente como argumento para el par�metro -File.\r\n",
+      "processedBy": "manual"
+    },
+    {
+      "id": "89f3e712-4e80-4a1c-b618-2f533030fd49",
+      "filename": "MAIA 24.11 TXT.TXT",
+      "cliente": "airliquide_portugal",
+      "status": "error",
+      "timestamp": "2025-11-25T08:32:23.338Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "El argumento 'C:\\Users\\egarcia\\BENCINA SERVICIOS GENERALES S\\Datos - DATOS\\SISTEMAS\\PRIVADO\\Esteban\\monitor-server\\public\\scripts\\airliquide\\airliquide_portugal.ps1' para el par�metro -File no existe. Proporcione la ruta de acceso a un archivo '.ps1' existente como argumento para el par�metro -File.\r\n",
+      "processedBy": "manual"
+    },
+    {
+      "id": "ec0559c1-7307-40d7-85b6-a59960d33590",
+      "filename": "MAIA_EXTRAS_20NOV.txt",
+      "cliente": "airliquide_portugal",
+      "status": "error",
+      "timestamp": "2025-11-25T08:40:52.330Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "El argumento 'C:\\Users\\egarcia\\BENCINA SERVICIOS GENERALES S\\Datos - DATOS\\SISTEMAS\\PRIVADO\\Esteban\\monitor-server\\public\\scripts\\airliquide\\airliquide_portugal.ps1' para el par�metro -File no existe. Proporcione la ruta de acceso a un archivo '.ps1' existente como argumento para el par�metro -File.\r\n",
+      "processedBy": "manual"
+    },
+    {
+      "id": "2158dc1f-101c-49f7-9b66-5820b9d429a2",
+      "filename": "MAIA 24.11 TXT.TXT",
+      "cliente": "airliquide_portugal",
+      "status": "error",
+      "timestamp": "2025-11-25T08:44:10.937Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "python: can't open file 'C:\\\\Users\\\\egarcia\\\\BENCINA SERVICIOS GENERALES S\\\\Datos - DATOS\\\\SISTEMAS\\\\PRIVADO\\\\Esteban\\\\monitor-server\\\\public\\\\scripts\\\\airliquide\\\\airliquide_portugal.py': [Errno 2] No such file or directory\r\n",
+      "processedBy": "manual"
+    },
+    {
+      "id": "58de85f0-c387-49e4-82ef-3412ada792c7",
+      "filename": "MAIA19NOV.txt",
+      "cliente": "airliquide_portugal",
+      "status": "error",
+      "timestamp": "2025-11-25T08:46:58.869Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "python: can't open file 'C:\\\\Users\\\\egarcia\\\\BENCINA SERVICIOS GENERALES S\\\\Datos - DATOS\\\\SISTEMAS\\\\PRIVADO\\\\Esteban\\\\monitor-server\\\\public\\\\scripts\\\\scripts\\\\airliquide\\\\airliquide_portugal.py': [Errno 2] No such file or directory\r\n",
+      "processedBy": "manual"
+    },
+    {
+      "id": "7a922f9f-b7f9-46d8-8cbb-293d1f333c4f",
+      "filename": "MAIA 24.11 TXT.TXT",
+      "cliente": "airliquide_portugal",
+      "status": "success",
+      "timestamp": "2025-11-25T09:04:44.804Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "1e39ac12-04bf-4878-8a87-97c93922acff",
+      "filename": "SPOOL_94132.pdf",
+      "cliente": "airliquide_bilbao",
+      "status": "error",
+      "timestamp": "2025-11-25T09:07:49.012Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "",
+      "processedBy": "manual"
+    },
+    {
+      "id": "d741471e-fbf6-465b-bc38-4aa6d32be64c",
+      "filename": "ALBERTO 2 17-10-25.pdf",
+      "cliente": "airliquide_galicia",
+      "status": "error",
+      "timestamp": "2025-11-25T09:19:55.908Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "",
+      "processedBy": "manual"
+    },
+    {
+      "id": "b1a4cb8b-a628-4873-a6f1-1db453631ea6",
+      "filename": "ALBERTO 2 17-10-25.pdf",
+      "cliente": "airliquide_galicia",
+      "status": "success",
+      "timestamp": "2025-11-25T09:30:44.250Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "9e4543b6-739d-46a7-85b1-f58ef3e5444f",
+      "filename": "3419_001.pdf",
+      "cliente": "nipongases",
+      "status": "error",
+      "timestamp": "2025-11-25T09:34:16.485Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "",
+      "processedBy": "manual"
+    },
+    {
+      "id": "a8694214-ed88-4b5d-900a-93b5fc6c3bd8",
+      "filename": "3419_001.pdf",
+      "cliente": "nipongases",
+      "status": "success",
+      "timestamp": "2025-11-25T10:25:52.178Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "166aac24-51d8-468f-88e3-7f2bcd8d4a7e",
+      "filename": "3537_001.pdf",
+      "cliente": "nipongases",
+      "status": "success",
+      "timestamp": "2025-11-25T10:26:49.323Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "8a60e5c6-42d2-40b6-aa94-706adee0871b",
+      "filename": "3419_001.pdf",
+      "cliente": "nipongases",
+      "status": "success",
+      "timestamp": "2025-11-25T10:30:17.677Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "e01001a3-942a-4031-a456-1151d4880355",
+      "filename": "test.pdf",
+      "cliente": "airliquide_galicia",
+      "status": "error",
+      "timestamp": "2025-11-26T07:52:14.643Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "",
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "9ab886a6-5f20-43e8-aed3-4b4c0587c055",
+      "filename": "CARLOS 09.10.25.pdf",
+      "cliente": "airliquide_galicia",
+      "status": "success",
+      "timestamp": "2025-11-26T07:53:53.519Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "c5478061-16a2-47ce-869e-5d22cee710a3",
+      "filename": "ALBERTO 2 17-10-25.pdf",
+      "cliente": "airliquide_galicia",
+      "status": "success",
+      "timestamp": "2025-11-26T07:57:53.818Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "86a68a53-e160-42fa-9642-9a4cf5e04901",
+      "filename": "3538_001.pdf",
+      "cliente": "nipongases",
+      "status": "success",
+      "timestamp": "2025-11-26T08:00:56.922Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "25e0b48f-8fa9-4ce1-a007-e53cf7e04410",
+      "filename": "SPOOL_94132",
+      "cliente": "nipongases",
+      "status": "error",
+      "timestamp": "2025-11-26T08:02:20.821Z",
+      "errorMessage": "Error en script",
+      "errorDetail": "",
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "2260763c-6450-4a29-acfb-ba0e9bbb008b",
+      "filename": "3560_001.pdf",
+      "cliente": "nipongases",
+      "status": "success",
+      "timestamp": "2025-11-26T08:07:33.009Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "ee2d73b4-3769-4112-836b-3841a0c23a5f",
+      "filename": "MAIA 24.11 TXT.txt",
+      "cliente": "airliquide_portugal",
+      "status": "success",
+      "timestamp": "2025-11-26T08:12:10.306Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "6679f738-356c-4732-ba95-751aa1ccada5",
+      "filename": "SPOOL_94133.pdf",
+      "cliente": "airliquide_bilbao",
+      "status": "success",
+      "timestamp": "2025-11-26T08:18:57.998Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "power_automate"
+    },
+    {
+      "id": "c50058de-0c78-4f68-bc31-7a5df2b4ec9c",
+      "filename": "3958_001.pdf",
+      "cliente": "nipongases",
+      "status": "success",
+      "timestamp": "2025-11-26T15:42:41.268Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "4a3160c4-df99-4100-bf28-13e44d98249c",
+      "filename": "PT11_27NOV.txt",
+      "cliente": "airliquide_portugal",
+      "status": "success",
+      "timestamp": "2025-11-26T16:06:14.234Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "bfd7d641-093b-43db-955c-858e61757bf3",
+      "filename": "ALBERTO 09.10.25.pdf",
+      "cliente": "airliquide_galicia",
+      "status": "success",
+      "timestamp": "2025-11-30T22:31:19.612Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "f9ef6e5c-7b94-4101-8cbb-053b18b95fa5",
+      "filename": "3402_001.pdf",
+      "cliente": "nipongases",
+      "status": "success",
+      "timestamp": "2025-11-30T22:34:24.791Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    },
+    {
+      "id": "802cf207-ba86-452f-9831-c463b0ecaf96",
+      "filename": "MAIA 24.11 TXT.txt",
+      "cliente": "airliquide_portugal",
+      "status": "success",
+      "timestamp": "2025-12-01T09:29:47.837Z",
+      "errorMessage": null,
+      "errorDetail": null,
+      "processedBy": "manual"
+    }
+  ],
+  "lastCleanup": "2025-11-24T11:13:05.196Z"
+}

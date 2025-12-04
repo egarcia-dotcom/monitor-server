@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador de Pedidos - Babé y Cía</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-left">
+                <div class="logo">
+                    <span class="logo-babe">BABÉ</span><span class="logo-ycia">YCIA</span>
+                </div>
+                <div class="navbar-title">PROCESADOR DE PEDIDOS</div>
+            </div>
+            <div class="navbar-tabs">
+                <button class="nav-tab active" data-page="monitor">Monitor</button>
+                <button class="nav-tab" data-page="historial">Historial</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Página Monitor -->
+        <div id="page-monitor" class="page active">
+            <div class="page-header">
+                <h1>MONITOR DE PROCESAMIENTO DE PDFS</h1>
+                <p>Gestión de documentos automáticos</p>
+            </div>
+
+            <div class="card">
+                <!-- Sección: Subir Archivos -->
+                <div class="section">
+                    <h2 class="section-title">SUBIR ARCHIVOS</h2>
+                    
+                    <div class="form-group">
+                        <label for="client-select">Tipo de cliente:</label>
+                        <select id="client-select" class="select">
+                            <option value="">Seleccionar cliente...</option>
+                        </select>
+                    </div>
+
+                    <div id="upload-area" class="upload-area disabled">
+                        <svg class="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                        <p class="upload-text">SUBE O ARRASTRA AQUÍ LOS DOCUMENTOS</p>
+                        <p class="upload-hint">PDF o TXT • Máximo 10 archivos (10MB cada uno)</p>
+                        <input type="file" id="file-input" multiple accept=".pdf,.txt" style="display: none;">
+                    </div>
+
+                    <div id="file-list" class="file-list"></div>
+
+                    <div id="upload-actions" class="button-group" style="display: none;">
+                        <button id="process-btn" class="btn btn-primary">PROCESAR ARCHIVOS</button>
+                        <button id="clear-btn" class="btn btn-secondary">LIMPIAR</button>
+                    </div>
+                </div>
+
+                <!-- Sección: Revisar Carpetas -->
+                <div class="section">
+                    <h2 class="section-title">REVISAR CARPETAS</h2>
+                    <p class="section-desc">Escanea todas las carpetas de entrada y procesa archivos pendientes manualmente</p>
+                    
+                    <button id="scan-btn" class="btn btn-secondary btn-wide">🔍 REVISAR TODAS LAS CARPETAS</button>
+
+                    <div id="scan-results" class="scan-results"></div>
+                </div>
+            </div>
+
+            <!-- Estado del servidor -->
+            <div class="server-status">
+                <span class="status-indicator"></span>
+                <span id="server-status-text">Servidor activo</span>
+            </div>
+        </div>
+
+        <!-- Página Historial -->
+        <div id="page-historial" class="page">
+            <div class="page-header">
+                <h1>HISTORIAL DE PROCESAMIENTO</h1>
+                <p>Últimos 30 días de actividad</p>
+            </div>
+
+            <div class="card">
+                <!-- Filtros -->
+                <div class="filters">
+                    <div class="form-group">
+                        <label for="history-date">Fecha:</label>
+                        <input type="date" id="history-date" class="input">
+                    </div>
+                    <div class="form-group">
+                        <label for="history-client">Cliente:</label>
+                        <select id="history-client" class="select">
+                            <option value="all">Todos</option>
+                        </select>
+                    </div>
+                    <button id="filter-btn" class="btn btn-primary">BUSCAR</button>
+                </div>
+
+                <!-- Tabla de historial -->
+                <div class="table-container">
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>Archivo</th>
+                                <th>Cliente</th>
+                                <th>Estado</th>
+                                <th>Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-tbody">
+                            <tr><td colspan="4" class="text-center">Cargando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Paginación -->
+                <div id="pagination" class="pagination"></div>
+
+                <!-- Resumen -->
+                <div id="history-stats" class="stats"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Estás en: <span> Monitor de PDFs </span></p>
+    </footer>
+
+    <!-- Overlay de procesamiento -->
+    <div id="processing-overlay" class="overlay">
+        <div class="overlay-content">
+            <div class="spinner"></div>
+            <p class="overlay-title">PROCESANDO...</p>
+            <p id="overlay-message" class="overlay-message"></p>
+        </div>
+    </div>
+
+    <!-- Toast de notificación -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/state.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/monitor.js"></script>
+    <script src="js/historial.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

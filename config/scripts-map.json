@@ -1,0 +1,6 @@
+{
+    "airliquide_bilbao": "scripts/airliquide/airliquide.py",
+    "airliquide_galicia": "scripts/airliquide/airliquide.py",
+    "airliquide_portugal": "scripts/airliquide/airliquide_portugal.py",
+    "nipongases": "scripts/nipongases/nipongases.py"
+}
