@@ -192,5 +192,6 @@ monitor-server/
 │   └── history.json             # Historial de procesamientos
 ├── temp/                        # Uploads temporales (se auto-limpia)
 └── logs/                        # Logs del servidor
-    └── monitor-YYYY-MM-DD.log#   m o n i t o r - s e r v e r  
+    └── monitor-YYYY-MM-DD.log#   m o n i t o r - s e r v e r 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
  
